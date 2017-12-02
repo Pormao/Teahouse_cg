@@ -1,0 +1,49 @@
+/* ~Navbar */
+#nav-bar {
+	width: 100%;
+    height: 50px;
+	line-height: 50px;
+    position: fixed;
+    top: 0px;
+    _position: absolute;
+    _top: expression(documentElement.scrollTop + "px");
+    z-index: 9999;
+}
+
+#nav {
+	filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    width: 100%;
+    height: 50px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 1px;
+    _background: #dcdcdc;
+    -ms-background: #dcdcdc;
+    position: fixed;
+    top: 0px;
+    _position: absolute;
+    _top: expression(documentElement.scrollTop + "px");
+    z-index: 9999;
+}
+
+#nav-bar-list {
+	box-shadow: 0 1px 1px white, 0 0 1px white, 0 0 1px white;
+    background: white;
+    z-index: 9999;
+    position: fixed;
+    border: 1px solid rgb(255, 255, 255);
+    width: 80px;
+    margin: -15px -55px;
+}
+
+#nav-bar .nav-logo {
+    background: url('../images/smlogo.png') center center no-repeat;
+    width: 100px;
+    height: 100%;
+}
+	
+	
+/* Navbar~ */

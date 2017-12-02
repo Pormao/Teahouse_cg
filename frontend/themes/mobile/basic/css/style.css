@@ -1,0 +1,428 @@
+/* 
+tip:书写规范
+
+模块区编写如:Navbar
+Header: ~Navbar
+Footer: Navbar~
+头尾与模块区各空一行，相邻的上下两个头尾相空三行。
+
+ */
+
+html,
+body {
+	margin:0;
+    height: 100%;
+	background-image: url('../images/bg.png');
+	font-family: STHeiti,"Microsoft Yahei","Microsoft YaHei",Arial,sans-serif;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+}
+
+.wrap > .container {
+	margin-top:55px;
+	height:auto;
+}
+
+.footer {
+    position: relative;
+	width:100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.clear{
+	clear:both;
+	}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+.pull-copy {
+	font-size: 14px;
+    color: #423D3D;
+    text-align: center;
+}	
+
+.mod-left {
+    float: left;
+    width: auto;
+	height:auto;
+}
+
+.mod-right {
+    float: right;
+    width: auto;
+	height:auto;
+}
+
+.classtitle {
+	margin: -10px 0px 0px -5px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dcdcdc;
+}
+/* ~hotcg */
+.hot_cg {
+	width: 810px;
+    height: 65px;
+    padding-top: 5px!important;
+    position: relative;
+}
+
+.hot_cg .card {
+    margin: 0 auto;
+    width: 810px;
+	cursor:pointer;
+}
+
+.hot_cg .card .cg_card {
+    width: 180px;
+    height: 70px;
+    border: 1px solid #F3F3F3;
+	display:inline-block;
+    _zoom:1;
+    _display:inline;
+	*zoom:1;
+    *display: inline;
+    border-radius: 5px;
+	margin: 8px;
+}
+
+.hot_cg .hot_cg_tip {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid red;
+    border-right: 20px solid transparent;
+    top: 0;
+    left: 0;
+}
+
+.hot_cg .card .cg_card:hover {
+    border: 1px solid #EFD4CC;
+	background-color:#FFFFE0;
+}
+
+.hot_cg .card .cg_card .cg_head {
+	width: 59px;
+    height: 59px;
+    border: 1px solid #dcdcdc;
+    margin-left: 5px;
+    margin-top: 4px;
+    float: left;
+    border-radius: 3px;
+}
+
+.hot_cg .card .cg_card .cg_data {
+	float:left;
+}
+
+.hot_cg .card .cg_card .cg_data .cg_name {
+    font-size: 14px;
+    color: #444;
+    height: 18px;
+    width: 88px;
+    overflow: hidden;
+    margin: 5px 0px 0px 10px;
+}
+
+.hot_cg .card .cg_card .cg_data .cg_says {
+	color:#999;
+	font-size:12px;
+	overflow: hidden;
+	margin: 3px 0px 0px 10px;
+}
+
+.hot_cg .card .cg_card .cg_data .cg_type {
+	background-color: #8FC9EA;
+    font-size: 12px;
+    overflow: hidden;
+    margin: 1px 0px 0px 10px;
+    display: inline-block;
+    padding: 1px 7px;
+    color: #fff;
+	border-radius: 55px;
+}
+/* hotcg~ */
+
+/* ~topic */
+.topic_cg {
+	width: 810px;
+	height:auto;
+}
+
+.topic_title {
+	margin-top:0px;
+	padding-bottom:5px;
+	border-bottom:1px solid #B5D1DC;
+}
+.topic_title > span {
+	padding-bottom:4px;
+	border-bottom:2px solid #1F98C7;
+}
+
+.topic_list {
+	width:100%;
+	height:auto;
+}
+
+.topic_list .topic_block {
+	padding-bottom:1px;
+	border-bottom:1px solid #F2F2F2;
+	width:100%;
+	height:auto;
+	margin-bottom:15px;
+}
+
+.topic_list .topic_block .topic_say {
+	width:90%;
+	height:auto;
+	margin-left: 70px;
+	margin-bottom: 10px;
+}
+
+.topic_list .topic_block .topic_cgname {
+	position: relative;
+	width:100%;
+	text-align:right;
+	color:#A2A2A2;
+	font-size:12px;
+}
+
+.topic_list .topic_block .userhead{
+	width: 40px;
+    height: 40px;
+    border: 1px solid #1F98C7;
+	padding:2px;
+    margin-left: 5px;
+    margin-top: 4px;
+    float: left;
+    border-radius:55px;
+}
+
+.topic_list .topic_block .topic_say .topic_say_title {
+	position: relative;
+    display: inline-block;
+    font-family: STHeiti,"Microsoft Yahei","Microsoft YaHei",Arial,sans-serif;
+    font-size: 16px;
+    color: #005097;
+	overflow: hidden;
+}
+
+.topic_list .topic_block .topic_say .topic_say_abstract {
+	position: relative;
+    font-family: STHeiti,"Microsoft Yahei","Microsoft YaHei",Arial,sans-serif;
+    font-size: 14px;
+    color: #999;
+}
+
+.topic_list .topic_block .topic_say .topic_say_view {
+	margin-top:10px;
+	width:130px;
+	height:100px;
+}
+/* topic~ */
+
+/* ~perdata */
+.perdata {
+	width:270px;
+	height:auto;
+}
+
+.perdata .userhead {
+	width: 80px;
+    height: 80px;
+    border: 1px solid #1F98C7;
+	padding:2px;
+    border-radius:55px;
+}
+
+.headblock {
+	width: 80px;
+	margin:0 auto;
+}
+
+.perdata .username {
+    height: 30px;
+	text-align:center;
+	margin: 10px 110px;
+}
+
+.lovecglist {
+	width:100%;
+	height:auto;
+}
+
+.lovecglist > div{
+	width: 270px;
+	margin:auto;
+}
+
+.lovecglist .lcg {
+	background: url(../images/love_cg.png) no-repeat 4px 4px;
+    border: 1px solid #dcdcdc;
+    width: 120px;
+    height: 30px;
+	line-height:30px;
+	cursor:pointer;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    overflow: hidden;
+	display:inline-block;
+    _zoom:1;
+    _display:inline;
+	*zoom:1;
+    *display: inline;
+    margin: 4px;
+}
+
+.lovecglist .lcg > div {
+    margin: 1px -30px 0px 0px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    width: 30px;
+    overflow: hidden;
+    float: left;
+}
+
+.lovecglist .lcg:hover {
+    border: 1px solid #A0C3E0;
+	background-color:#ECF6FF;
+}
+/* perdata~ */
+
+/* ~ranklist */
+.rankinglist {
+	width:270px;
+	height:auto;
+}
+
+.rankinglist > p {
+	margin:5px;
+}
+
+.rankinglist .ranktitle {
+    color: #000;
+    font-size: 14px;
+    width: 100%;
+    clear: both;
+    height: 35px;
+    padding-top: 11px;
+	cursor:pointer;
+}
+
+.rankinglist .ranktitle:hover {
+    background-color: #FDFFE9;
+    padding-top: 11px;
+}
+
+.rankinglist .ranktitle > span{
+    color: #fff;
+    border-radius: 55px;
+    width: 25px;
+    height: 25px;
+    float: left;
+    background-color: #62B3E2;
+    line-height: 25px;
+    text-align: center;
+    font-size: 13px;
+    margin: -1px 10px;
+}
+/* ranklist~ */
+
+.mtx {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: #A5A8AD 0px 0px 12px -3px;
+    margin-bottom: 15px;
+    padding: 25px;
+}
+
+.mod {
+    width: 1200px;
+    margin: 80px auto;
+	height:auto;
+}
+
+.site-index {
+	height:auto;
+}
+

@@ -1,0 +1,109 @@
+/* ~Navbar */
+#nav-bar {
+	width: 100%;
+    height: 60px;
+	line-height: 60px;
+    position: fixed;
+    top: 0px;
+    _position: absolute;
+    _top: expression(documentElement.scrollTop + "px");
+    z-index: 9999;
+    overflow:hidden; 
+}
+
+#nav {
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    width: 100%;
+    height: 60px;
+    background: #227dc5;
+    box-shadow: #3B3C3E 0 -2px 10px;
+    border-bottom: 1px solid #4D8EEC;
+    _background: #dcdcdc;
+    -ms-background: #dcdcdc;
+    position: fixed;
+    top: 0px;
+    _position: absolute;
+    _top: expression(documentElement.scrollTop + "px");
+    z-index: 9999;
+}
+
+#nav-bar-list {
+	box-shadow: 0 1px 1px white, 0 0 1px white, 0 0 1px white;
+    background: white;
+    z-index: 9999;
+    position: fixed;
+    border: 1px solid rgb(255, 255, 255);
+    width: 80px;
+    margin: -15px -55px;
+}
+
+#nav-bar .nav-logo {
+    background: url('../images/smlogo.png') center center no-repeat;
+    width: 100px;
+    height: 100%;
+	float:left;
+}
+
+#nav-bar .nav-logow {
+    background: url('../images/slogo.png') center center no-repeat;
+    width: 100px;
+    height: 98%;
+    border-bottom: 2px solid #fff;
+    margin-left: 20px;
+    float: left;
+}
+
+#nav-bar .nav-right {
+    width: 90%;
+	float:right;
+}
+	
+#nav-bar .nav-search {
+    width: 160px;
+    height: 30px;
+    float: right;
+    background-color: #1c68a4;
+    border-radius: 3px;
+    margin: 15px 9px;
+    padding: 1px 35px 0px 15px;
+}
+
+#nav-bar .nav-search > input{
+    border: 0px;
+    background-color: #1c68a4;
+    height: 27px;
+    line-height: 27px;
+    font-size: 13px;
+    color: #C2DAEC;
+    float: left;
+    outline: none;
+}
+
+#nav-bar .nav-search .btn{
+    background: url(../images/search_btn.png) no-repeat 0px 3px;
+    width: 30px;
+    height: 30px;
+    float:left;
+    margin-top:-25px;
+    margin-left:165px;
+    cursor: pointer;
+}
+
+#nav-bar .nav-user {
+	min-width: 100px;
+	width:auto!important;
+    float:right;
+	margin-right: 10px;
+}
+
+#nav-bar .nav-user a{
+    font-weight: 600;
+    color: #fff;
+    float: left;
+    margin: 0 7px;
+    font-size: 12px;
+}
+/* Navbar~ */

@@ -1,0 +1,38 @@
+<?php
+return [
+    'adminEmail' => 'admin@example.com',
+	'postHeaderId' => '2000',
+	'postReplyHeaderId' => '2888',
+	'userPortraitHeaderUrl' => 'https://cg.pormao.com/user/h?id=',
+	'userPortraitBgHeaderUrl' => 'https://cg.pormao.com/user/b?id=',
+	'cgPortraitHeaderUrl' => 'https://cg.pormao.com/cg/h?md5=',
+	'cgPortraitBgHeaderUrl' => 'https://cg.pormao.com/cg/b?md5=',
+	
+	'cgType' => [
+		'地方社交',
+		'追星族',
+		'影视音乐',
+		'游戏',
+		'置业安居',
+		'车行天下',
+		'星座缘分',
+		'动漫',
+		'体育联盟',
+		'IT/互联网',
+		'美食',
+		'科技生活',
+		'职业交流',
+		'技术联盟',
+		'同事录',
+		'老乡会',
+		'旅游',
+		'同城对碰',
+		'读书会',
+		'生活休闲',
+		'商业金融',
+		'其他',
+		'原创空间',
+		'同学',
+	],
+	
+];

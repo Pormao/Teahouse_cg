@@ -1,0 +1,3 @@
+User-agent: *
+allow:https://cg.pormao.com/p/*
+Disallow:
